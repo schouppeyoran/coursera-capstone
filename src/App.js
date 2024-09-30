@@ -4,6 +4,7 @@ import { ChakraProvider } from '@chakra-ui/react'
 import Homepage from './pages/Homepage';
 import BookingPage from './pages/BookingPage';
 import PlaceHolder from './pages/PlaceHolder';
+import ConfirmedBooking from './pages/ConfirmedBooking';
 import Header from './components/Header';
 import Main from './components/Main';
 import Footer from './components/Footer';
@@ -24,6 +25,7 @@ const App = () => {
             <Route path="/reservations" element={<BookingPage/>} />
             <Route path="/order" element={<PlaceHolder title="Order Online"/>} />
             <Route path="/login" element={<PlaceHolder title="Customer Portal"/>} />
+            <Route path="/confirmed" element={<ConfirmedBooking/>} />
           </Routes>
         </Main>
         <Footer />
