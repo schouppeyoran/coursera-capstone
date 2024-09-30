@@ -8,14 +8,16 @@ const Hero = () => {
     <Flex
       direction={{ base: "column", md: "row" }}
       align="center"
-      justify="center"
+      justify="space-between"
       bg="#495E57"
       p={8}
-      gap={{ base: 0, md: 16 }}
+      gap={{ base: 0, md: 48 }}
+      paddingX={{ base: 4, md: 32 }}
+
     >
       <Box
         color="white"
-        maxW={{ base: "100%", md: "50%" }}
+        maxW={{ base: "100%", md: "400px" }}
         mb={{ base: 8, md: 0 }}
       >
         <VStack align="flex-start" spacing={4}>

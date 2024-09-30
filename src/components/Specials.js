@@ -37,8 +37,9 @@ const Specials = () => {
             width="100%"
             mb={4}
             gap={4}
+            paddingX={4}
           >
-            <h2>This week's specials!</h2>
+            <h2 paddingX={4}>This week's specials!</h2>
             <Link to="/menu">
               <Button
                       bg="#F4CE14"
@@ -53,16 +54,17 @@ const Specials = () => {
           </Flex>
             <SimpleGrid
             columns={{ base: 1, md: 2, lg: 3 }}
-            spacing={8}
-            padding="1rem"
+            spacingX={16}
+            spacingY={8}
+            padding={4}
             >
-            {specials.map((project) => (
+            {specials.map((special) => (
                 <SpecialsCard
-                key={project.title}
-                title={project.title}
-                description={project.description}
-                price={project.price}
-                imageSrc={project.getImageSrc()}
+                key={special.title}
+                title={special.title}
+                description={special.description}
+                price={special.price}
+                imageSrc={special.getImageSrc()}
                 />
             ))}
             </SimpleGrid>

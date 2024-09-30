@@ -6,12 +6,12 @@ import Backstory from "../components/Backstory";
 
   const Homepage = () => {
     return (
-      <>
+      <main>
         <Hero/>
         <Specials/>
         <Reviews/>
         <Backstory/>
-      </>
+      </main>
     );
   };
 

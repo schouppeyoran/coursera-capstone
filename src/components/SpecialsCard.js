@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMotorcycle } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-const Card = ({ title, description, imageSrc, price }) => {
+const Card = ({ title, description, imageSrc, price}) => {
   return (
     <Box
       backgroundColor="#EDEFEE"
@@ -13,7 +13,7 @@ const Card = ({ title, description, imageSrc, price }) => {
       height="100%"
       display="flex"
       flexDirection="column"
-      maxWidth="350px"
+      // maxWidth="350px"
     >
       <VStack spacing={3} align="stretch" flex={1}>
         <Image src={imageSrc} alt={title} rounded="16px" width="100%" objectFit="cover"/>
@@ -36,7 +36,7 @@ const Card = ({ title, description, imageSrc, price }) => {
           </Link>
         </Flex>
       </VStack>
-    </Box>
+      </Box>
   );
 };
 
