@@ -19,11 +19,11 @@ const App = () => {
         <Main>
           <Routes>
             <Route path="/" element={<Homepage/>} />
-            <Route path="/about" element={<PlaceHolder/>} />
-            <Route path="/menu" element={<PlaceHolder/>} />
+            <Route path="/about" element={<PlaceHolder title="About Us"/>} />
+            <Route path="/menu" element={<PlaceHolder title="Menu"/>} />
             <Route path="/reservations" element={<Reservations/>} />
-            <Route path="/order" element={<PlaceHolder/>} />
-            <Route path="/login" element={<PlaceHolder/>} />
+            <Route path="/order" element={<PlaceHolder title="Order Online"/>} />
+            <Route path="/login" element={<PlaceHolder title="Customer Portal"/>} />
           </Routes>
         </Main>
         <Footer />
