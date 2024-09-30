@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react'
 
 import Homepage from './pages/Homepage';
-import Reservations from './pages/Reservations';
+import BookingPage from './pages/BookingPage';
 import PlaceHolder from './pages/PlaceHolder';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -21,7 +21,7 @@ const App = () => {
             <Route path="/" element={<Homepage/>} />
             <Route path="/about" element={<PlaceHolder title="About Us"/>} />
             <Route path="/menu" element={<PlaceHolder title="Menu"/>} />
-            <Route path="/reservations" element={<Reservations/>} />
+            <Route path="/reservations" element={<BookingPage/>} />
             <Route path="/order" element={<PlaceHolder title="Order Online"/>} />
             <Route path="/login" element={<PlaceHolder title="Customer Portal"/>} />
           </Routes>

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
 
 import './Footer.css';
-import logo from './assets/logo_footer.svg';
+import logo from './assets/logo_footer.png';
 
 const socials = [
   {
@@ -25,7 +25,7 @@ const socials = [
 const Footer = () => {
     return (
       <footer>
-          <img className='footer-logo' src={logo} alt="Logo" height="50px" />
+          <img className='footer-logo' src={logo} alt="Logo" />
           <section id='contact-us'>
             <h3>Contact Us</h3>
             <p>123 Main Street<br/>Anytown USA</p>

@@ -29,7 +29,7 @@ const specials = [
 
 const Specials = () => {
     return (
-        <>
+        <section id="specials-section">
           <Flex
             direction={{ base: "column", md: "row" }}
             justify={{ base: "center", md: "space-between" }}
@@ -68,7 +68,7 @@ const Specials = () => {
                 />
             ))}
             </SimpleGrid>
-    </>
+    </section>
     );
 };
 

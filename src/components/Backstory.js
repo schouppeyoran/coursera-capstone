@@ -1,12 +1,12 @@
 // Backstory.js
 import chefsImg1 from './assets/BackStoryA.jpg';
 import chefsImg2 from './assets/BackStoryB.jpg';
-import { VStack, Heading, Text, Image, HStack, Box, Flex } from "@chakra-ui/react";
+import { VStack, Heading, Text, Image, Box, Flex } from "@chakra-ui/react";
 
 const Backstory = () => {
     return (
-        <Box padding={4}>
-            <Text as="h2">Our Story</Text>
+        <Box padding={4} as="section" id='backstory-section'>
+            <Text as="h2" align={{base : "center", md : "left"}} >Our Story</Text>
             <Flex
             direction={{ base: "column", md: "row" }}
             align="center"
@@ -35,9 +35,9 @@ const Backstory = () => {
                         </Text>
                     </VStack>
                 </Box>
-                <Box 
+                <Box
                     position="relative"
-                    width="300px" 
+                    width="300px"
                     height="200px"
                 >
                     <Image
@@ -56,8 +56,8 @@ const Backstory = () => {
                         borderRadius="16px"
                         objectFit="cover"
                         position="absolute"
-                        top="80px"
-                        left="-160px"
+                        top="135px"
+                        left="-80px"
                         zIndex="2"
                         display={{ base: "none", md: "block" }}
                     />

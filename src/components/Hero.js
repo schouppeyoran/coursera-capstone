@@ -13,7 +13,8 @@ const Hero = () => {
       p={8}
       gap={{ base: 0, md: 48 }}
       paddingX={{ base: 4, md: 32 }}
-
+      as="section"
+      id='hero-section'
     >
       <Box
         color="white"

@@ -13,7 +13,7 @@ const Card = ({ title, description, imageSrc, price}) => {
       height="100%"
       display="flex"
       flexDirection="column"
-      // maxWidth="350px"
+      as="article"
     >
       <VStack spacing={3} align="stretch" flex={1}>
         <Image src={imageSrc} alt={title} rounded="16px" width="100%" objectFit="cover"/>

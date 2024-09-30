@@ -42,7 +42,7 @@ const reviews = [
 
 const Review = () => {
     return (
-        <>
+        <section id='reviews-section'>
             <Text as="h2" px={4} align={{base : "center", md : "left"}}>Testimonials</Text>
             <SimpleGrid
             columns={{ base: 1, md: 2, lg: 4 }}
@@ -59,7 +59,7 @@ const Review = () => {
                     comment={review.comment} />
             ))}
             </SimpleGrid>
-        </>
+        </section>
     )
 }
 

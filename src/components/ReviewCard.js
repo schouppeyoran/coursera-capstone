@@ -13,6 +13,7 @@ const ReviewCard = ({ name, profileImg, rating, comment}) => {
             display="flex"
             flexDirection="column"
             p={4}
+            as="article"
         >
             <VStack spacing={3} align="stretch" flex={1}>
                 <Rating rating={rating}/>
