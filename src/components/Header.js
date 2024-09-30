@@ -1,35 +1,37 @@
-// Header.js
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from './assets/Logo.svg'
-import { Box, HStack } from '@chakra-ui/react';
+import logo from './assets/Logo.svg';
+import './Header.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
-    return (
-        <Box backgroundColor="black">
-        <Box color="white" maxWidth="1280px" margin="0 auto">
-          <HStack
-            px={16}
-            py={4}
-            justifyContent="space-between"
-            alignItems="center"
-          >
-            <nav>
-              <HStack spacing={8}>
-                    <Link to="/">
-                        <img src={logo} alt="Little Lemon Logo" />
-                    </Link>
-                    <Link to="/">Home</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/menu">Menu</Link>
-                    <Link to="/reservations">Reservations</Link>
-                    <Link to="/order">Order</Link>
-                    <Link to="/login">Login</Link>
-              </HStack>
-            </nav>
-          </HStack>
-        </Box>
-      </Box>
-    );
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <header>
+      <div className="logo-content">
+        <button className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+          <FontAwesomeIcon icon={faBars} />
+        </button>
+        <Link to="/" className="logo">
+          <img src={logo} alt="Little Lemon Logo" />
+        </Link>
+      </div>
+      <nav>
+        <ul
+          className={menuOpen ? "nav-expanded" : ""}
+          onClick={() => setMenuOpen(!menuOpen)}>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/menu">Menu</Link></li>
+          <li><Link to="/reservations">Reservations</Link></li>
+          <li><Link to="/order">Order</Link></li>
+          <li><Link to="/login">Login</Link></li>
+        </ul>
+      </nav>
+    </header>
+  );
 };
 
 export default Header;
