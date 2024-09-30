@@ -1,10 +1,12 @@
 import React from 'react';
-import './Main.css';
+import { Box } from '@chakra-ui/react';
+
 const Main = ({ children }) => {
   return (
-    <main className="main-content">
+    <Box as="main" my={32}>
       {children}
-    </main>
+    </Box>
   );
 };
+
 export default Main;
