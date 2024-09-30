@@ -39,6 +39,12 @@ header {
     text-decoration: none;
     color: var(--hightlight-color-2);
   }
+  header nav ul li a.active {
+    font-weight: bold;
+    color: var(--primary-color-2);
+    background-color: var(--primary-color-1);
+    /* text-decoration: underline;  */
+  }
 }
 
 /* For smaller screens */

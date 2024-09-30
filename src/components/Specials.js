@@ -47,6 +47,7 @@ const Specials = () => {
                       rounded={16}
                       _hover={{ bg: "#E1BD13" }}
                       fontFamily="Karla"
+                      aria-label="Online menu"
                   >
                     Online menu
               </Button>

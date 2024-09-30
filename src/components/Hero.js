@@ -47,6 +47,7 @@ const Hero = () => {
                     rounded={16}
                     _hover={{ bg: "#E1BD13" }}
                     fontFamily="Karla"
+                    aria-label='Reservations'
                 >
                 Reserve a Table
                 </Button>

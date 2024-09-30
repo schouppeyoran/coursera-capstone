@@ -49,6 +49,7 @@ const Review = () => {
             spacingX={16}
             spacingY={8}
             padding={4}
+            aria-label="Customer review cards"
             >
             {reviews.map(review => (
                 <ReviewCard

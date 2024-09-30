@@ -129,8 +129,9 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
         value={date}
         onChange={handleDateChange}
         min={getFormattedDate()}
-        max={getFormattedDate(3)}
+        max={getFormattedDate(4)}
         required
+        aria-required="true"
       />
 
       <label htmlFor="res-time">Choose time</label>
@@ -139,6 +140,7 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
         value={time}
         onChange={handleTimeChange}
         required
+        aria-required="true"
       >
         <option value="">Select a time</option>
         {availableTimes.map((availableTime) => (
@@ -155,6 +157,7 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
         value={guests}
         onChange={handleGuestsChange}
         required
+        aria-required="true"
       />
 
       <label htmlFor="occasion">Occasion</label>
@@ -163,6 +166,7 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
         value={occasion}
         onChange={handleOccasionChange}
         required
+        aria-required="true"
       >
         <option value="">Select an occasion</option>
         <option value="Birthday">Birthday</option>
@@ -177,6 +181,7 @@ const BookingForm = ({ availableTimes, updateTimes, submitForm }) => {
         _hover={{ bg: "#E1BD13" }}
         fontFamily="Karla"
         isDisabled={!isFormValid}
+        airia-label="Submit"
       >
         Make Your reservation
       </Button>

@@ -3,7 +3,7 @@ import { Box } from '@chakra-ui/react';
 
 const Main = ({ children }) => {
   return (
-    <Box as="main">
+    <Box as="main" role='main'>
       {children}
     </Box>
   );
