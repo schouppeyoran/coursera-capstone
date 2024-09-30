@@ -1,5 +1,7 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import SpecialsCard from "./SpecialsCard";
+import { Button, Flex } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const specials = [
     {
@@ -28,7 +30,27 @@ const specials = [
 const Specials = () => {
     return (
         <>
+          <Flex
+            direction={{ base: "column", md: "row" }}
+            justify={{ base: "center", md: "space-between" }}
+            align={{ base: "center", md: "center" }}
+            width="100%"
+            mb={4}
+            gap={4}
+          >
             <h2>This week's specials!</h2>
+            <Link to="/menu">
+              <Button
+                      bg="#F4CE14"
+                      color="black"
+                      rounded={16}
+                      _hover={{ bg: "#E1BD13" }}
+                      fontFamily="Karla"
+                  >
+                    Online menu
+              </Button>
+            </Link>
+          </Flex>
             <SimpleGrid
             columns={{ base: 1, md: 2, lg: 3 }}
             spacing={8}
