@@ -1,6 +1,5 @@
 // Footer.js
 import React from 'react';
-import { HStack } from '@chakra-ui/react';
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faTwitter, } from "@fortawesome/free-brands-svg-icons";
@@ -26,8 +25,7 @@ const socials = [
 const Footer = () => {
     return (
       <footer>
-        <HStack spacing="32px" alignItems="flex-start">
-          <img src={logo} alt="Logo" height="50px" />
+          <img className='footer-logo' src={logo} alt="Logo" height="50px" />
           <section id='navigation-map'>
             <h1>Doormat Navigation</h1>
             <nav>
@@ -50,7 +48,6 @@ const Footer = () => {
           <section id='social-media'>
             <h1>Social Media</h1>
             <nav>
-            <HStack spacing={8}>
               {socials.map(({ icon, url }) => (
                 <a
                   key={url}
@@ -61,10 +58,8 @@ const Footer = () => {
                   <FontAwesomeIcon icon={icon} size="lg" key={url} />
                 </a>
               ))}
-            </HStack>
-         </nav>
+            </nav>
           </section>
-        </HStack>
       </footer>
     );
   };
