@@ -9,12 +9,7 @@
     padding: 20px;
     text-align: center;
 }
+
 .placeholder-title {
-    font-size: 2.5rem;
-    color: black;
     margin-bottom: 20px;
-}
-.placeholder-text {
-    font-size: 1.2rem;
-    color: #333333;
 }

@@ -27,13 +27,13 @@ const Footer = () => {
       <footer>
           <img className='footer-logo' src={logo} alt="Logo" height="50px" />
           <section id='contact-us'>
-            <h1>Contact Us</h1>
+            <h3>Contact Us</h3>
             <p>123 Main Street<br/>Anytown USA</p>
             <p>858-858-8585</p>
             <p>contactus@littlelemon.com</p>
           </section>
           <section id='social-media'>
-            <h1>Social Media</h1>
+            <h3>Social Media</h3>
             <nav>
               {socials.map(({ icon, url }) => (
                 <a
@@ -48,7 +48,7 @@ const Footer = () => {
             </nav>
           </section>
           <section id='navigation-map'>
-            <h1>Site Map</h1>
+            <h3>Site Map</h3>
             <nav>
               <ul>
                 <li><Link to="/">Home</Link></li>
